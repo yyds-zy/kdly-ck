@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#84c1ff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/finish_back"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/goback" /><!-- 返回 -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="出库任务清单" />
+       <!-- <EditText
+            android:id="@+id/foucas_result1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            >
+            <requestFocus />
+        </EditText>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期:"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_toRightOf="@id/data_tv"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tv_bg"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="#238E23"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:text="出库中"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/search_btn2"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:background="#FF7F00"
+            android:text="已完成"
+            android:gravity="center"
+            android:layout_marginRight="95dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#666666"/>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</LinearLayout>
